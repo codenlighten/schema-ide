@@ -1,0 +1,37 @@
+## 🛣️ **Roadmap**
+
+### ✅ **Phase 1: Pipeline Engine** (COMPLETE)
+- [x] PipelineEngine core orchestration
+- [x] PolicyEngine security layer
+- [x] 3 built-in pipelines
+- [x] TypeScript definitions
+- [x] Jest test suite
+- [x] Comprehensive documentation
+
+### ✅ **Phase 2: CLI Tool** (COMPLETE)
+- [x] `schema-icu pipeline-list` - Show available pipelines ✅
+- [x] `schema-icu pipeline-run <name>` - Execute pipelines from terminal ✅
+- [x] `schema-icu pipeline-create` - Interactive pipeline builder ✅
+- [x] `schema-icu pipeline-validate` - Test custom pipelines ✅
+- [x] `schema-icu new` - Project bootstrapping wizard ✅
+
+### 🚧 **Phase 3: VS Code Extension** (IN PROGRESS - Alpha)
+- [x] Command palette integration ✅
+- [x] Settings/configuration UI ✅
+- [x] Activity bar sidebar ✅
+- [x] Status bar item ✅
+- [x] Tree view providers ✅
+- [ ] Full pipeline execution (integrating...)
+- [ ] Visual diff preview UI
+- [ ] Inline code editing
+- [ ] Execution history tracking
+- [ ] Approval workflow UI
+
+👉 **[VS Code Extension Repository →](https://github.com/codenlighten/schema-ide-vscode)**
+
+### ❌ **Phase 4: Marketplace** (FUTURE)
+- [ ] Pipeline registry
+- [ ] Community pipelines
+- [ ] Pipeline versioning
+- [ ] On-chain verification
+- [ ] Monetization layer
