@@ -1,35 +1,87 @@
-# Schema.ICU IDE Platform
+# Schema.ICU Pipeline Engine ⚙️
 
+[![CI](https://github.com/SmartLedgerTech/schema-ide/workflows/CI/badge.svg)](https://github.com/SmartLedgerTech/schema-ide/actions)
+[![npm version](https://badge.fury.io/js/%40smartledger%2Fschema-icu-ide-core.svg)](https://www.npmjs.com/package/@smartledger/schema-icu-ide-core)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Node.js Version](https://img.shields.io/badge/node-%3E%3D14.0.0-brightgreen.svg)](https://nodejs.org/)
 [![Schema.ICU](https://img.shields.io/badge/Schema.ICU-Powered-blue.svg)](https://schema.icu)
 
-**AI IDE Platform with Schema-Driven Pipeline Orchestration**
+**AI Orchestration Framework with Schema-Driven Multi-Agent Workflows**
 
-Transform multiple Schema.ICU AI agents into powerful, verifiable workflows with the PipelineEngine - the foundation for building secure AI-powered development tools.
+> ⚠️ **HONEST STATUS:** We're at **Phase 1** (Engine Complete). CLI tool and VS Code extension coming in Phases 2 & 3.
+
+Transform multiple Schema.ICU AI agents into powerful, verifiable workflows with the PipelineEngine - the **foundation** for building AI-powered development tools (not the IDE itself... yet).
 
 ---
 
-## 🎯 **What is Schema.ICU IDE?**
+## 🎯 **What is This?**
 
-Schema.ICU IDE is a **production-grade AI orchestration platform** that coordinates 11 specialized AI agents into structured, auditable workflows. Unlike traditional AI coding assistants, we provide:
+### **What It Actually Is** ✅
 
-- ⚡ **Multi-Agent Orchestration** - Chain agents into sophisticated development workflows
-- 🔒 **Schema-Based Security** - PolicyEngine prevents malicious actions before execution
-- 🔐 **Cryptographic Signing** - Every response is BSV-signed for authenticity
-- 🎯 **Guaranteed Structure** - JSON Schema validation on all outputs
-- 📊 **Full Traceability** - Complete audit trail of all agent actions
-- 🔧 **Production Ready** - Powers VS Code extensions, CLI tools, and CI/CD pipelines
+This is an **AI orchestration framework** (like Langchain or AutoGPT) that:
+
+- ⚡ **Orchestrates 11 AI Agents** - Chain agents into sophisticated workflows
+- 🔒 **Enforces Security** - PolicyEngine prevents malicious actions
+- 🔐 **Signs Everything** - BSV cryptographic signatures for authenticity
+- 🎯 **Guarantees Structure** - JSON Schema validation on all outputs
+- 📊 **Tracks Everything** - Complete audit trail of all agent actions
+- 📦 **Node.js Library** - Programmatic API for building AI tools
+
+### **What It's NOT (Yet)** ❌
+
+This is **NOT** a full IDE like VS Code or Cursor:
+
+- ❌ No code editor or UI
+- ❌ No visual debugging
+- ❌ No file explorer
+- ❌ No terminal integration (yet)
+- ❌ No command palette (yet)
+
+### **The Vision** 🎨
+
+This engine is **Phase 1** of building a complete AI IDE:
+
+```
+┌─────────────────┐     ┌──────────────┐     ┌──────────────────┐
+│ Pipeline Engine │ ──▶ │  CLI Tool    │ ──▶ │ VS Code Extension│
+│   (Phase 1)     │     │  (Phase 2)   │     │   (Phase 3)      │
+│  ✅ COMPLETE    │     │  🚧 BUILDING │     │   ❌ PLANNED     │
+└─────────────────┘     └──────────────┘     └──────────────────┘
+    You are here!         Coming soon!          Future goal!
+```
+
+**Think of it like:** We built the engine, now we're building the car and the controls.
+
+---
+
+## 📊 **Comparison: What We're Like**
+
+| Feature | Schema.ICU<br>Pipeline Engine | Langchain | Cursor IDE | GitHub Copilot |
+|---------|-------------------------------|-----------|------------|----------------|
+| **Type** | Orchestration Framework | Orchestration Framework | Full IDE | IDE Extension |
+| **UI** | ❌ None (API only) | ❌ None (API only) | ✅ Full Editor | ✅ Inline Editor |
+| **Multi-Agent** | ✅ 11 Agents | ✅ Custom Chains | ✅ Multiple Models | ❌ Single Model |
+| **Security** | ✅ PolicyEngine | ⚠️ Manual | ⚠️ Basic | ⚠️ Cloud-based |
+| **Signatures** | ✅ BSV Crypto | ❌ No | ❌ No | ❌ No |
+| **Schema Validation** | ✅ Enforced | ⚠️ Optional | ❌ No | ❌ No |
+| **CLI Tool** | 🚧 Phase 2 | ✅ Yes | ✅ Yes | ✅ Yes |
+| **IDE Extension** | ❌ Phase 3 | ⚠️ Community | ✅ Native | ✅ Native |
+
+**TL;DR:** We're like **Langchain** (orchestration), not **Cursor** (IDE)... *yet*.
 
 ---
 
 ## 🚀 **Quick Start**
 
-```bash
-# Install
-npm install @smartledger/schema-icu-ide-core
+### **Installation**
 
-# Use in your project
+```bash
+npm install @smartledger/schema-icu-ide-core
+```
+
+### **Basic Usage**
+
+```javascript
 const { SchemaICU } = require('@smartledger/schema-icu-sdk');
 const { PipelineEngine, PolicyEngine, implementFeature } = require('@smartledger/schema-icu-ide-core');
 
@@ -73,135 +125,120 @@ Create custom pipelines, add policy rules, integrate with any IDE or CI/CD syste
 
 ---
 
+## 🚧 **Current Limitations**
+
+Let's be honest about what's NOT built yet:
+
+| Limitation | Status | ETA |
+|------------|--------|-----|
+| ❌ No CLI tool (`npx schema-icu pipeline run`) | 🚧 Phase 2 | Q1 2025 |
+| ❌ No VS Code extension | ❌ Phase 3 | Q2 2025 |
+| ❌ No visual UI | ❌ Phase 3 | Q2 2025 |
+| ❌ No file editing UI | ❌ Phase 3 | Q2 2025 |
+| ❌ No debugging interface | ❌ Phase 3+ | TBD |
+| ❌ Not published to NPM | 🚧 Coming | Jan 2025 |
+| ⚠️ Only 1 commit in repo | 🚧 Growing | Ongoing |
+| ⚠️ No demo videos | 🚧 Coming | Jan 2025 |
+
+**What works TODAY:** Programmatic API for Node.js projects. You write code to orchestrate agents.
+
+---
+
 ## 📚 **Documentation**
 
-- [Pipeline Engine Guide](./docs/PIPELINE_ENGINE.md) - Complete orchestration guide
-- [Creating Pipelines](./docs/CREATING_PIPELINES.md) - Build custom workflows
-- [Policy Engine](./docs/POLICY_ENGINE.md) - Security configuration
-- [API Reference](./docs/API_REFERENCE.md) - Full API documentation
-- [VS Code Extension](./packages/vscode-extension/README.md) - IDE integration
+- [Pipeline Engine Guide](./docs/PIPELINE_ENGINE.md) - Complete orchestration docs
+- [Creating Custom Pipelines](./docs/PIPELINE_ENGINE.md#creating-custom-pipelines)
+- [Policy Engine Security](./docs/PIPELINE_ENGINE.md#policy-engine)
+- [API Reference](./docs/PIPELINE_ENGINE.md#api-reference)
+- [Examples](./examples/) - Working code samples
 
 ---
 
-## 🏗️ **Architecture**
+## 🛣️ **Roadmap**
 
-```
-┌─────────────────────────────────────────────────────┐
-│              Schema.ICU IDE Platform                 │
-│                                                      │
-│  ┌────────────────────────────────────────────┐    │
-│  │         PipelineEngine                      │    │
-│  │  • Multi-step agent orchestration          │    │
-│  │  • Context propagation                     │    │
-│  │  • Action collection                        │    │
-│  └────────────────────────────────────────────┘    │
-│                        ↓                             │
-│  ┌────────────────────────────────────────────┐    │
-│  │          PolicyEngine                       │    │
-│  │  • Schema validation                        │    │
-│  │  • File/command whitelisting               │    │
-│  │  • Approval requirements                    │    │
-│  └────────────────────────────────────────────┘    │
-│                        ↓                             │
-│  ┌────────────────────────────────────────────┐    │
-│  │    11 Schema.ICU AI Agents                  │    │
-│  │  base | codeGenerator | schemaGenerator     │    │
-│  │  terminalAgent | codeImprover | diffImprover│    │
-│  │  boxDesigner | projectPlanner               │    │
-│  │  promptImprover | toolChoice | githubAgent  │    │
-│  └────────────────────────────────────────────┘    │
-└─────────────────────────────────────────────────────┘
-```
+### ✅ **Phase 1: Pipeline Engine** (COMPLETE)
+- [x] PipelineEngine core orchestration
+- [x] PolicyEngine security layer
+- [x] 3 built-in pipelines
+- [x] TypeScript definitions
+- [x] Jest test suite
+- [x] Comprehensive documentation
 
----
+### 🚧 **Phase 2: CLI Tool** (IN PROGRESS)
+- [ ] `npx schema-icu pipeline list` - Show available pipelines
+- [ ] `npx schema-icu pipeline run <name>` - Execute pipelines from terminal
+- [ ] `npx schema-icu pipeline create` - Interactive pipeline builder
+- [ ] `npx schema-icu pipeline validate` - Test custom pipelines
+- [ ] `npx schema-icu new` - Project bootstrapping wizard
 
-## 🎯 **Use Cases**
+### ❌ **Phase 3: VS Code Extension** (PLANNED)
+- [ ] Command palette integration
+- [ ] Visual pipeline execution
+- [ ] Inline code editing
+- [ ] Diff preview UI
+- [ ] Settings/configuration UI
+- [ ] Approval workflow UI
 
-### **IDE Extensions**
-Build VS Code, JetBrains, or Neovim extensions with verified AI workflows.
-
-### **CI/CD Automation**
-Automate code reviews, test fixes, and deployments with cryptographic audit trails.
-
-### **Development Tools**
-Create CLI tools, web-based IDEs, or custom automation with structured AI.
-
-### **Enterprise Governance**
-Deploy AI coding assistants with policy enforcement and compliance logging.
+### ❌ **Phase 4: Marketplace** (FUTURE)
+- [ ] Pipeline registry
+- [ ] Community pipelines
+- [ ] Pipeline versioning
+- [ ] On-chain verification
+- [ ] Monetization layer
 
 ---
 
-## 📦 **Installation**
+## 🔧 **Examples**
 
-```bash
-npm install @smartledger/schema-icu-ide-core
+### **Run a Complete Feature Implementation**
+
+```javascript
+const result = await engine.runPipeline('implement-feature', {
+  userPrompt: 'Add JWT authentication to Express API',
+  projectContext: { framework: 'Express', hasDatabase: true },
+  preferences: { language: 'JavaScript', includeTests: true }
+});
+
+// result.steps[0] - Improved prompt
+// result.steps[1] - Task breakdown
+// result.steps[2] - JSON schemas
+// result.steps[3] - Generated code
+// result.steps[4] - Improved code
+// result.steps[5] - Git diffs
 ```
 
-**Prerequisites:**
-- Node.js >= 14.0.0
-- Schema.ICU API key ([get one free](https://schema.icu))
+### **Fix Failing Tests**
 
----
-
-## 🔧 **Project Structure**
-
-```
-schema-icu-ide-core/
-├── src/
-│   ├── engine/          # PipelineEngine core
-│   ├── policy/          # PolicyEngine security
-│   ├── pipelines/       # Built-in pipelines
-│   └── types/           # TypeScript definitions
-├── packages/
-│   ├── vscode-extension/   # VS Code integration
-│   ├── cli/               # Command-line tool
-│   └── registry/          # Pipeline marketplace
-├── examples/
-│   ├── custom-pipelines/  # Example workflows
-│   └── integrations/      # IDE integrations
-├── docs/
-│   ├── PIPELINE_ENGINE.md
-│   ├── CREATING_PIPELINES.md
-│   └── API_REFERENCE.md
-└── tests/
-    └── engine/           # Test suites
+```javascript
+const result = await engine.runPipeline('fix-tests', {
+  userPrompt: 'Fix the failing authentication tests',
+  testOutput: '... test error logs ...',
+  codeContext: '... relevant code files ...'
+});
 ```
 
----
+### **Scaffold a New Service**
 
-## 🚨 **Security**
-
-Schema.ICU IDE is designed with security as a first-class concern:
-
-- ✅ **Schema-validated actions** - All operations conform to strict schemas
-- ✅ **Cryptographic signing** - BSV signatures on every AI response
-- ✅ **Policy enforcement** - Whitelist/blacklist files and commands
-- ✅ **Human-in-the-loop** - Approval workflows for sensitive operations
-- ✅ **Audit trails** - Complete traceability of all actions
-
-See [Security Guide](./docs/SECURITY.md) for details.
+```javascript
+const result = await engine.runPipeline('new-service', {
+  userPrompt: 'Create a payment processing microservice',
+  preferences: {
+    framework: 'Fastify',
+    database: 'PostgreSQL',
+    includeDocker: true
+  }
+});
+```
 
 ---
 
 ## 🤝 **Contributing**
 
-We welcome contributions! See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
+We're building this in public! Check out:
 
-**Ideas for contributions:**
-- Custom pipeline examples
-- IDE integrations
-- Policy templates
-- Documentation improvements
-
----
-
-## 🔗 **Links**
-
-- **Schema.ICU Platform**: https://schema.icu
-- **SDK Examples**: https://github.com/codenlighten/schema-icu-sdk-example
-- **Documentation**: https://schema.icu/docs
-- **Support**: support@smartledger.technology
-- **Enterprise**: enterprise@smartledger.technology
+- [CONTRIBUTING.md](./CONTRIBUTING.md) - How to contribute
+- [Good First Issues](https://github.com/codenlighten/schema-ide/labels/good-first-issue)
+- [Phase 2 Roadmap](./docs/ROADMAP.md) - Help build the CLI!
 
 ---
 
@@ -211,13 +248,13 @@ MIT License - see [LICENSE](./LICENSE)
 
 ---
 
-## 🙏 **Acknowledgments**
+## 🔗 **Links**
 
-Built with ❤️ by [SmartLedger Technologies](https://smartledger.technology)
-
-Powered by [Schema.ICU](https://schema.icu) - Structured AI. Verified. Trusted.
+- [Schema.ICU Platform](https://schema.icu)
+- [SDK Examples](https://github.com/codenlighten/schema-icu-sdk-example)
+- [Documentation](./docs/)
+- [NPM Package](https://www.npmjs.com/package/@smartledger/schema-icu-ide-core) (coming soon)
 
 ---
 
-**Phase 1 Complete** ✅ - Pipeline Engine Foundation  
-**Next**: VS Code Extension, CLI Tool, Pipeline Marketplace
+**Built with ❤️ by [SmartLedger](https://smartledger.solutions)**

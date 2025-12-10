@@ -1,12 +1,9 @@
 {
   "name": "@smartledger/schema-icu-ide-core",
-  "version": "1.0.0-beta.1",
-  "description": "AI Pipeline Engine for Schema.ICU - Orchestrate multiple AI agents into powerful workflows (Phase 1: Engine Complete, Phase 2: CLI In Progress)",
+  "version": "1.0.0",
+  "description": "AI IDE platform with pipeline orchestration for Schema.ICU - Build secure, verifiable AI development tools",
   "main": "src/index.js",
   "types": "src/types/pipeline.d.ts",
-  "bin": {
-    "schema-icu": "./src/cli.js"
-  },
   "scripts": {
     "test": "jest --verbose",
     "test:watch": "jest --watch",
@@ -15,28 +12,23 @@
     "demo": "node examples/pipeline-engine-demo.js",
     "example:implement": "node examples/run-implement-feature.js",
     "example:fix-tests": "node examples/run-fix-tests.js",
-    "example:new-service": "node examples/run-new-service.js",
-    "cli": "node src/cli.js",
-    "cli:list": "node src/cli.js pipeline-list",
-    "cli:help": "node src/cli.js --help"
+    "example:new-service": "node examples/run-new-service.js"
   },
   "keywords": [
     "schema-icu",
     "ai",
-    "orchestration",
+    "ide",
     "pipeline",
-    "multi-agent",
-    "langchain",
-    "autogpt",
+    "orchestration",
     "code-generation",
     "llm",
     "structured-output",
     "cryptographic-signing",
     "policy-engine",
     "security",
-    "cli-tool",
-    "automation",
-    "development-tools"
+    "development-tools",
+    "vscode",
+    "automation"
   ],
   "author": "Gregory Ward <codenlighten1@gmail.com>",
   "license": "MIT",
@@ -55,12 +47,6 @@
   },
   "peerDependencies": {
     "@smartledger/schema-icu-sdk": "^1.0.2"
-  },
-  "dependencies": {
-    "chalk": "^4.1.2",
-    "commander": "^11.1.0",
-    "inquirer": "^8.2.7",
-    "ora": "^5.4.1"
   },
   "devDependencies": {
     "@smartledger/schema-icu-sdk": "^1.0.2",
