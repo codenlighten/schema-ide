@@ -1,0 +1,64 @@
+{
+  "name": "@smartledger/schema-icu-ide-core",
+  "version": "1.0.0",
+  "description": "AI IDE platform with pipeline orchestration for Schema.ICU - Build secure, verifiable AI development tools",
+  "main": "src/index.js",
+  "types": "src/types/pipeline.d.ts",
+  "scripts": {
+    "test": "jest --verbose",
+    "test:watch": "jest --watch",
+    "lint": "eslint src/**/*.js",
+    "format": "prettier --write \"**/*.{js,json,md}\"",
+    "demo": "node examples/pipeline-engine-demo.js",
+    "example:implement": "node examples/run-implement-feature.js",
+    "example:fix-tests": "node examples/run-fix-tests.js",
+    "example:new-service": "node examples/run-new-service.js"
+  },
+  "keywords": [
+    "schema-icu",
+    "ai",
+    "ide",
+    "pipeline",
+    "orchestration",
+    "code-generation",
+    "llm",
+    "structured-output",
+    "cryptographic-signing",
+    "policy-engine",
+    "security",
+    "development-tools",
+    "vscode",
+    "automation"
+  ],
+  "author": "Gregory Ward <codenlighten1@gmail.com>",
+  "license": "MIT",
+  "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codenlighten/schema-ide.git"
+  },
+  "bugs": {
+    "url": "https://github.com/codenlighten/schema-ide/issues"
+  },
+  "homepage": "https://github.com/codenlighten/schema-ide#readme",
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "peerDependencies": {
+    "@smartledger/schema-icu-sdk": "^1.0.2"
+  },
+  "devDependencies": {
+    "@smartledger/schema-icu-sdk": "^1.0.2",
+    "eslint": "^8.57.0",
+    "jest": "^30.2.0",
+    "prettier": "^3.7.0"
+  },
+  "files": [
+    "src/",
+    "docs/",
+    "examples/",
+    "README.md",
+    "LICENSE"
+  ]
+}
